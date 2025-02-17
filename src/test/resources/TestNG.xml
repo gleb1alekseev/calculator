@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CalculatorSuite" parallel="methods" thread-count="4">
+    <listeners>
+        <listener class-name="tests.TestListener"/>
+    </listeners>
+    <test name="CalculatorTests">
+        <classes>
+            <class name="tests.SumTests"/>
+            <class name="tests.SubtractTests"/>
+            <class name="tests.MultiplyTests"/>
+            <class name="tests.DivideTests"/>
+        </classes>
+    </test>
+</suite>
